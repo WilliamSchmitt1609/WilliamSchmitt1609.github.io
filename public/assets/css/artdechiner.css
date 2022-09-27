@@ -1,0 +1,100 @@
+.navbar-item-custom, .navbar-item-custom a {
+
+    color: green;
+
+}
+
+body {
+    position: relative;
+}
+
+header {
+    background-color: #6495ED;
+}
+
+.text-right{
+    margin-bottom: 100px;
+}
+
+.footer-custom{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.product-item {
+    border: 1px solid ;
+    margin: 5px;
+    margin-top: 50px;
+    margin-right: 20px;
+    border-radius: 5%;
+    padding: 10px;
+    height: 420px;
+    width: 300px;
+
+}
+
+.img-fluid{
+
+    height: 65%;
+    width: 90%;
+}
+
+.product-item h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+.empty-cart{
+    font-weight: bold;
+}
+
+.shopping-cart{
+    height: 30px;
+}
+
+.product-item .product-subtitle{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-item .product-price{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product-price{
+    font-weight: bold;
+}
+
+.login-block{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-check{
+    padding: 20px 60px;
+    margin-top: 7px;
+}
+
+.col-form-label{
+    font-weight: bold;
+
+}
+
+.order-summary{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}

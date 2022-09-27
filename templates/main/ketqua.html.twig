@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kết Quả{% endblock %}
+
+{% block content %}
+    <h3>1. Xây dựng bản đồ ngập lụt bằng mô hình thủy lực</h3>
+    <br>
+    <p>Mô hình thủy lực kết nối 1-2 chiều đã xây dựng ở trên được hiệu chỉnh và kiểm định với 2 trận lũ lớn. Các trận lũ được lựa chọn là các trận lũ điển hình, gây ngập lụt trên diện rộng, và cần có đầy đủ số liệu quan trắc, đặc biệt là các số liệu mưa quan trắc và tài liệu khảo sát vết lũ cũng như độ sâu và diện ngập lụt. Do đó, trận lũ ngày 01/10/2010 đến ngày 09/10/2010 được sử dụng để hiệu chỉnh mô hình và trận lũ ngày 14/10/2020 đến ngày 26/10/2020 được sử dụng để kiểm định mô hình.</p>
+
+    <p>Sau khi mô hình được kiểm định, đề tài có thể mô phỏng lại trận lũ lụt năm 2020 tại lưu vực sông Gianh. Hình 1 và 2 mô phỏng trận lũ lụt từ ngày 14 đến 26 tháng 10 măm 2020 tại các xã miền núi huyện Tuyên Hóa và các xã hạ lưu sông Gianh.</p>
+
+    <img class="ml-5" src="{{ asset('images/image1.png') }}" alt="img1">
+    <hr>
+    <br>
+    <img class="ml-5" src="{{ asset('images/image2.png') }}" alt="img2">
+    <hr>
+    <br>
+
+    <h3>2. Phân tích biến đổi sử dụng đất trong khu vực nhạy cảm với lũ lụt</h3>
+
+    <p>Hình 1 cho thấy bản đồ tính nhạy cảm với lũ lụt cho các mô hình ADABOOST (ADB), Random Forest (RF) and Support Vector Machine (SVM). Sự phân bố không gian của từng lớp nhạy cảm của các thuật toán được trình bày trong Bảng 1. Đối với bản đồ nhạy cảm với lũ lụt được xây dựng bằng mô hình ADB, khoảng 313,7 km2 ở mức độ nhạy cảm rất cao, 357,8 km² ở mức cao, 252,5 km² ở mức trung bình, 110 km² và 2692,3 km² ở mức thấp và rất thấp. Đối với bản đồ được xây dựng bởi mô hình RF cho thấy mức độ nhạy cảm rất cao và cao lần lượt chiếm 539,7 km² và 96,1 km² toàn bộ lưu vực sông Gianh, mức độ trung bình chiếm 92,3 km², thấp là 607,4 km² và rất thấp là 2.330,5 km². Đối với bản đồ được tahnh lập bởi mô hình SVM, khoảng 369 km² và 359,1 km² nằm ở mức độ rất cao và cao, 391,6 km² ở mức độ trung bình, 686,2 km² và 1893,4 km² ở mức độ thấp và rất thấp.</p>
+    <br>
+    <h5>Bảng 1: Sự phân bố các mức độ nhạy cảm lũ lụt của mô hình ADB, RF và SVM</h5>
+    <table>
+        <tbody>
+            <tr>
+                <tr>
+                    <th></th>
+                    <th>Rất thấp (km²)</th>
+                    <th>Thấp (km²)</th>
+                    <th>Trung bình (km²)</th>
+                    <th>Cao (km²)</th>
+                    <th>Rất cao (km²)</th>
+                </tr>
+                
+                <tr>
+                    <td>ADB</td>
+                    <td>2692.3</td>
+                    <td>110</td>
+                    <td>252.5</td>
+                    <td>357.8</td>
+                    <td>313.7</td>
+                </tr>
+
+                <tr>
+                    <td>RF</td>
+                    <td>2330.5</td>
+                    <td>607.4</td>
+                    <td>92.3</td>
+                    <td>156.6</td>
+                    <td>539.7</td>
+                </tr>
+
+                <tr>
+                    <td>SVM</td>
+                    <td>1893.4</td>
+                    <td>686.2</td>
+                    <td>391.6</td>
+                    <td>359.1</td>
+                    <td>396</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <img class="ml-5" src="{{ asset('images/image3.png') }}" alt="img3">
+    <hr>
+    <br>
+    <img class="ml-5" src="{{ asset('images/image4.png') }}" alt="img4">
+    <hr>
+    <br>
+    <img class="ml-5" src="{{ asset('images/image5.png') }}" alt="img5">
+    <hr>
+    <br>
+
+    <p>Sự biến đổi diện tích đất xây dựng từ năm 2005 đến 2020 trong các mức độ nhạy cảm lũ lụt do RF thành lập được trình bày trong bảng 15. Có thể thấy rằng, diện tích đất xây dựng tăng nhanh trong tất cả các mức độ nhạy cảm với lũ lụt. Trong đó, diện tích đất xây dựng tăng khoảng 100% từ năm 2005 đến 2020 trong mức độ nhạy cảm thấp và rất thấp, 70% trong mức độ nhạy cảm trung bình và khoảng 50% trong mức độ nhạy cảm cao và rất cao. Sự gia tăng diện tích đất xây dựng trong khu vực nhạy cảm với lũ lụt cao và rất cao tập trung chủ yếu ở khu vực đồng bằng ven biển, đặt biệt là các xã Quảng Phuc, Quảng Thuân, và thị xã Ba Đồn.</p>
+    <br>
+    <h5>Bảng 2: Biến đổi diện tích đất xây dựng từ năm 2005 đến 2020 trong khu vực nhạy cảm lũ lụt</h5>
+    <table>
+        <tbody>
+            <tr>
+                <tr>
+                    <th></th>
+                    <th>Rất thấp (km²)</th>
+                    <th>Thấp (km²)</th>
+                    <th>Trung bình (km²)</th>
+                    <th>Cao (km²)</th>
+                    <th>Rất cao (km²)</th>
+                </tr>
+                
+                <tr>
+                    <td>Diện tích đất xây dựng năm 2005</td>
+                    <td>35.41</td>
+                    <td>21.44</td>
+                    <td>36.23</td>
+                    <td>62.45</td>
+                    <td>91.86</td>
+                </tr>
+
+                <tr>
+                    <td>Diện tích đất xây dựng năm 2020</td>
+                    <td>76.08</td>
+                    <td>42.8</td>
+                    <td>62.98</td>
+                    <td>93.69</td>
+                    <td>120.31</td>
+                </tr>
+
+                <tr>
+                    <td>Tỷ lệ biến đổi(%)</td>
+                    <td>114.85</td>
+                    <td>99.63</td>
+                    <td>73.83</td>
+                    <td>50.02</td>
+                    <td>30.97</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+    
+{% endblock %}
